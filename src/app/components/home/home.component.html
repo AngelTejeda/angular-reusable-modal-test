@@ -1,0 +1,11 @@
+<h1>Home Page</h1>
+<button type="button" (click)="openModal(modalList, 'Lista')">Abrir Lista</button>
+<button type="button" (click)="openModal(modalForm, 'Formulario')">Abrir Form</button>
+
+<app-modal #modalList [modalConfig]="modalConfig">
+  <app-list></app-list>
+</app-modal>
+
+<app-modal #modalForm [modalConfig]="modalConfig">
+  <app-form></app-form>
+</app-modal>
